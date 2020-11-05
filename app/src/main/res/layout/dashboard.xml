@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingHorizontal="30dp"
+    tools:context=".MainActivity">
+
+    <!--Caixa maxima da tela-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--Exibição do titulo da pagina-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catálogo"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/round_button"
+            android:textColor="#0FEC18"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+        <!--Caixa do item1-->
+        <LinearLayout
+            android:layout_width="184dp"
+            android:layout_height="271dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/rectangular_field">
+
+            <!--Titulo do item 1 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Leite " />
+
+            <!--Exibição da imagem do item 1-->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/milk" />
+
+            <!--Valor do item 1 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="R$ 3,00 (1 Litro)" />
+
+            <!--Caixa dos botões do item-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--Botão remover no item 1-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="subtrair1"
+                    android:text="-"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+                <!--Exibição da quantidade do item 1-->
+                <TextView
+                    android:id="@+id/qtdItem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="0"
+                    android:textSize="25sp" />
+
+                <!--Botão adicionar no item 1-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="somar1"
+                    android:text="+"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--Caixa do item2-->
+        <LinearLayout
+            android:layout_width="184dp"
+            android:layout_height="271dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/rectangular_field">
+
+            <!--Titulo do item 1 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Ovos " />
+
+            <!--Exibição da imagem do item 1-->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/egg" />
+
+            <!--Valor do item 1 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="R$ 5,00 (dúzia)" />
+
+            <!--Caixa dos botões do item-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--Botão remover no item 1-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="subtrair1"
+                    android:text="-"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+                <!--Exibição da quantidade do item 1-->
+                <TextView
+                    android:id="@+id/qtdItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="0"
+                    android:textSize="25sp" />
+
+                <!--Botão adicionar no item 1-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="somar1"
+                    android:text="+"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Caixa do item3-->
+        <LinearLayout
+            android:layout_width="184dp"
+            android:layout_height="271dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/rectangular_field">
+
+            <!--Titulo do item 1 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Mel " />
+
+            <!--Exibição da imagem do item 1-->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/honey" />
+
+            <!--Valor do item 1 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="R$ 5,00 (500ml)" />
+
+            <!--Caixa dos botões do item-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--Botão remover no item 1-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="subtrair1"
+                    android:text="-"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+                <!--Exibição da quantidade do item 1-->
+                <TextView
+                    android:id="@+id/qtdItem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="0"
+                    android:textSize="25sp" />
+
+                <!--Botão adicionar no item 1-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="somar1"
+                    android:text="+"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Caixa do item4-->
+        <LinearLayout
+            android:layout_width="184dp"
+            android:layout_height="271dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/rectangular_field">
+
+            <!--Titulo do item 4 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Laranja " />
+
+            <!--Exibição da imagem do item 4-->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/orange" />
+
+            <!--Valor do item 4 -->
+            <TextView
+                android:textSize="25sp"
+                android:textColor="#4905C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="R$ 15,00 (1 Caixa)" />
+
+            <!--Caixa dos botões do item-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--Botão remover no item 4-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="subtrair1"
+                    android:text="-"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+                <!--Exibição da quantidade do item 4-->
+                <TextView
+                    android:id="@+id/qtdItem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="0"
+                    android:textSize="25sp" />
+
+                <!--Botão adicionar no item 4-->
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick="somar1"
+                    android:text="+"
+                    android:textColor="#0FEC18"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Texto Resumo do pedido-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumo do Pedido"
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <!--Valor total do pedido-->
+        <TextView
+            android:id="@+id/resumo_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 0"
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <!--Caixa dos botões de comprar e sair-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--Botão para exibir o pedido e enviar por email-->
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/round_button"
+                android:onClick="enviarPedido"
+                android:text="Comprar"
+                android:textAllCaps="false"
+                android:textColor="#0FEC18"
+                android:textSize="20sp" />
+
+            <!--Botão para sair da aplicação-->
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/round_button"
+                android:text="Sair"
+                android:textAllCaps="false"
+                android:textColor="#0FEC18"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+

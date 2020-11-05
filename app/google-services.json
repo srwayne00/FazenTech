@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "66220823484",
+    "firebase_url": "https://fazentech5.firebaseio.com",
+    "project_id": "fazentech5",
+    "storage_bucket": "fazentech5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66220823484:android:10dd812e2e5d1ee06d91b9",
+        "android_client_info": {
+          "package_name": "com.fortrecker.fazentech5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66220823484-gedv0sub73psino086oeaq64fkvns73v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_6-CVVshjx3XxasBSKBEk6PVCvJAom68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66220823484-gedv0sub73psino086oeaq64fkvns73v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
